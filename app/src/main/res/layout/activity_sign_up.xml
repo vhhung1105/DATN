@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable
+            name="SignupViewModel"
+            type="com.example.datn.viewmodel.SignupViewModel" />
+
+    </data>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:overScrollMode="ifContentScrolls"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp"
+            android:scrollbars="vertical"
+            android:verticalScrollbarPosition="left">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="wrap_content"
+                android:layout_height="86dp"
+                android:layout_marginTop="50dp"
+                app:srcCompat="@drawable/z5174626064377_b257612bbe783a7ca1e7d0fbc4c1848d" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="12dp"
+                android:background="@drawable/border"
+
+                android:baselineAligned="false"
+                android:gravity="center|center_vertical"
+                android:nestedScrollingEnabled="false"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="12dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/ic_action_name" />
+
+                <EditText
+                    android:id="@+id/txtUserName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/border_none"
+                    android:bufferType="normal"
+
+                    android:fontFamily="@font/inter"
+
+
+                    android:hint="Tên đăng nhập"
+                    android:inputType="textPersonName"
+                    android:textSize="14sp"
+
+                    android:text="@={SignupViewModel.tenDangNhap}"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+                <ImageView
+                    android:id="@+id/imgDelete"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/close"
+                    />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="12dp"
+                android:background="@drawable/border"
+
+                android:baselineAligned="false"
+                android:gravity="center|center_vertical"
+                android:nestedScrollingEnabled="false"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/imgName"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="12dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/ic_action_name" />
+
+                <EditText
+                    android:id="@+id/txtName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/border_none"
+                    android:bufferType="normal"
+
+                    android:fontFamily="@font/inter"
+
+
+                    android:hint="Tên người dùng"
+                    android:inputType="textPersonName"
+                    android:textSize="14sp"
+
+                    android:text="@={SignupViewModel.ten}"
+
+                    tools:ignore="TouchTargetSizeCheck" />
+
+                <ImageView
+                    android:id="@+id/deleteName"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/close"
+                    />
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="12dp"
+                android:background="@drawable/border"
+
+                android:baselineAligned="false"
+                android:gravity="center|center_vertical"
+                android:nestedScrollingEnabled="false"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/imageView31"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="12dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/ic_action_name" />
+
+                <EditText
+                    android:id="@+id/txtLastName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/border_none"
+                    android:bufferType="normal"
+
+                    android:fontFamily="@font/inter"
+
+                    android:text="@={SignupViewModel.ho}"
+
+
+                    android:hint="Họ người dùng"
+                    android:inputType="textPersonName"
+                    android:textSize="14sp"
+
+                    tools:ignore="TouchTargetSizeCheck" />
+
+                <ImageView
+                    android:id="@+id/deleteLastName"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/close"
+                    />
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="12dp"
+                android:background="@drawable/border"
+
+                android:baselineAligned="false"
+                android:gravity="center|center_vertical"
+                android:nestedScrollingEnabled="false"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/imageView53"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="12dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/phone" />
+
+                <EditText
+                    android:id="@+id/txtPhoneNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/border_none"
+                    android:bufferType="normal"
+
+                    android:text="@={SignupViewModel.soDienThoai}"
+
+                    android:fontFamily="@font/inter"
+                    android:hint="Số điện thoại"
+                    android:inputType="textPersonName"
+                    android:textSize="14sp"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+                <ImageView
+                    android:id="@+id/deleteNumberPhone"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/close" />
+
+            </LinearLayout>
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="12dp"
+                android:background="@drawable/border"
+
+                android:baselineAligned="false"
+                android:gravity="center|center_vertical"
+                android:nestedScrollingEnabled="false"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/imageView7"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="12dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/ic_baseline_email_24" />
+
+                <EditText
+                    android:id="@+id/txtEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/border_none"
+                    android:bufferType="normal"
+
+                    android:text="@={SignupViewModel.email}"
+
+
+                    android:fontFamily="@font/inter"
+
+
+                    android:hint="Nhập Email"
+                    android:inputType="textPersonName"
+                    android:textSize="14sp"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+                <ImageView
+                    android:id="@+id/deleteEmail"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/close" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="12dp"
+                android:background="@drawable/border"
+
+                android:baselineAligned="false"
+                android:gravity="center|center_vertical"
+                android:nestedScrollingEnabled="false"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="12dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/lock" />
+
+                <EditText
+                    android:id="@+id/txtPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/border_none"
+                    android:bufferType="normal"
+                    android:fontFamily="@font/inter"
+                    android:hint="Mật khẩu"
+
+                    android:text="@={SignupViewModel.password}"
+
+                    android:inputType="textPassword"
+                    android:textSize="14sp"
+                    tools:ignore="TouchTargetSizeCheck"  />
+
+                <ImageView
+                    android:id="@+id/imgShowPassword"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/eye" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="12dp"
+                android:background="@drawable/border"
+
+                android:baselineAligned="false"
+                android:gravity="center|center_vertical"
+                android:nestedScrollingEnabled="false"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/imageView43"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="12dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/lock" />
+
+                <EditText
+                    android:id="@+id/txtPasswordAgain"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/border_none"
+
+                    android:text="@={SignupViewModel.passwordAgain}"
+
+                    android:bufferType="normal"
+                    android:fontFamily="@font/inter"
+                    android:hint="Nhập lại mật khẩu"
+                    android:inputType="textPassword"
+                    android:textSize="14sp"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+                <ImageView
+                    android:id="@+id/imgShowPasswordAgain"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/eye" />
+            </LinearLayout>
+
+
+            <Switch
+                android:id="@+id/switchDieuKhoan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="25dp"
+                android:minHeight="48dp"
+                android:checked="@={SignupViewModel.dieuKhoan}"
+                android:text="Chấp nhập điều khoản" />
+
+
+
+            <Button
+                android:id="@+id/btnSignUp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/round"
+                android:text="Đăng ký"
+                android:textAllCaps="false"
+                android:textColor="#F7F8F9"
+
+                android:textSize="16sp"
+                />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/inter"
+                android:text="Phiên bản 1.8.0"
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="#7C000000"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </ScrollView>
+</layout>
+
